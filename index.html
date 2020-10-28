@@ -10071,10 +10071,10 @@ $$
 ''Nota:'' Non possiamo usare l'Assioma di specificazione qui, per ottenere immediatamente l'insieme unione, in quanto lo schema di assiomi di specificazione si riferisce ad un //unico// insieme, non a due o più insiemi.
 </pre>
 </div>
-<div created="20201028104131736" modified="20201028112849384" title="1.8 Teorema (SET)">
+<div created="20201028104131736" modified="20201028113036190" title="1.8 Teorema (SET)">
 <pre>Dati tre insiemi $$X,Y,Z$$, per l'unione insiemistica valgono le seguenti proprietà:
 
-# $$X\cup Y = Y\cup X$$ @@text-align:right; ''Proprietà Commutativa''@@
+# $$X\cup Y = Y\cup X$$ ''Proprietà Commutativa''
 # $$(X\cup Y)\cup Z = X\cup (Y\cup Z)$$ ''Proprietà Associativa''
 #$$X\cup X = X $$ ''Riflessività''
 #Se $$X\subseteq Z$$ e $$Y\subseteq Z$$ allora $$X\cup Y \subseteq Z$$
@@ -10092,7 +10092,7 @@ L'ultima proprietà vuol dire che l'unione di due insiemi contenuti in un insiem
 $$ 
 ## Con un ragionamento analogo possiamo dimostrare pure che $$
 X\cup (Y\cup Z) = \bigcup\{X,Y,Z\}$$ Da cui la tesi.
-# $$X\cup X = \bigcup\{X,X\}$$. Per [[L'Assioma Di Estensionalità|1.2 Definizione (SET)]], $$\{X,X\} = \{X\}$$. Pertanto abbiamo che $$X\cup X = \bigcup\{X,X\} = \bigcup \{X\}$$. Per definizione dell'[[insieme unione|1.6 Definizione (SET)]], $$\bigcup \{X\}$$ contiene tutti gli elementi degli elementi di $$\{X\}$$. Ma l'unico elemento di $$\{X\}$$ è $$X$$ stesso, pertanto \bigcup \{X\}$$ coincide con tutti gli elementi di $$X$$, ovvero $$X\cup X = X$$.
+# $$X\cup X = \bigcup\{X,X\}$$. Per [[L'Assioma Di Estensionalità|1.2 Definizione (SET)]], $$\{X,X\} = \{X\}$$. Pertanto abbiamo che $$X\cup X = \bigcup\{X,X\} = \bigcup \{X\}$$. Per definizione dell'[[insieme unione|1.6 Definizione (SET)]], $$\bigcup \{X\}$$ contiene tutti gli elementi degli elementi di $$\{X\}$$. Ma l'unico elemento di $$\{X\}$$ è $$X$$ stesso, pertanto $$\bigcup \{X\}$$ coincide con tutti gli elementi di $$X$$, ovvero $$X\cup X = X$$.
 #Sia $$x\in X\cup Y$$: ci sono due casi, ovvero $$x\in X, e quindi, per ipotesi, $$x\in Z$$, oppure $$x\in Y$$ e anche in questo caso $$x\in Z$$. Pertanto $$X\cup Y\subseteq Z$$
 
 @@text-align:right;
