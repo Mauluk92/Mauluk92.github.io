@@ -9841,7 +9841,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201030111032562" list="[[1.8 Dimostrazione Parte 1 (SET)]] [[Introduzione Alla Teoria Degli Insiemi]] [[1.8 Teorema (SET)]] [[1.10 Teorema (SET)]] [[1.11 Definizione (SET)]] [[1.12 Definizione (SET)]] [[1.13 Definizione (SET)]] [[1.14 Definizione (SET)]] [[1.15 Teorema (SET)]]" modified="20201030154519400" title="$:/StoryList">
+<div created="20201030111032562" list="[[1.8 Dimostrazione Parte 2 (SET)]] [[1.8 Dimostrazione Parte 1 (SET)]] [[Introduzione Alla Teoria Degli Insiemi]] [[1.8 Teorema (SET)]] [[1.10 Teorema (SET)]] [[1.11 Definizione (SET)]] [[1.12 Definizione (SET)]] [[1.13 Definizione (SET)]] [[1.14 Definizione (SET)]] [[1.15 Teorema (SET)]]" modified="20201030154948159" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10236,18 +10236,29 @@ $$
 ''Nota:'' Non possiamo usare l'Assioma di specificazione qui, per ottenere immediatamente l'insieme unione, in quanto lo schema di assiomi di specificazione si riferisce ad un //unico// insieme, non a due o più insiemi.
 </pre>
 </div>
-<div created="20201030154459545" modified="20201030154537764" tags="" title="1.8 Dimostrazione Parte 1 (SET)">
-<pre>Per Definizione $$X\cup Y=\bigcup \{X,Y\}$$. Per L'[[Assioma Di Estensionalità|1.2 Definizione (SET)]], $$\{X,Y\}= \{Y,X\}$$ poiché hanno gli stessi elementi. Pertanto segue che: $$X\cup Y=\bigcup\{X,Y\}=\bigcup\{Y,X\}=Y\cup X$$</pre>
+<div created="20201030154459545" modified="20201030155044520" tags="" title="1.8 Dimostrazione Parte 1 (SET)">
+<pre>Per Definizione $$X\cup Y=\bigcup \{X,Y\}$$. Per L'[[Assioma Di Estensionalità|1.2 Definizione (SET)]], $$\{X,Y\}= \{Y,X\}$$ poiché hanno gli stessi elementi. Pertanto segue che: $$X\cup Y=\bigcup\{X,Y\}=\bigcup\{Y,X\}=Y\cup X$$
+
+@@text-align:right;
+$$\square$$
+@@
+</pre>
 </div>
-<div created="20201030154755123" modified="20201030154755123" tags="" title="1.8 Dimostrazione Parte 2 (SET)">
+<div created="20201030154755123" modified="20201030155026482" tags="" title="1.8 Dimostrazione Parte 2 (SET)">
 <pre>Per definizione $$(X\cup Y)\cup Z = \bigcup\{\bigcup\{X,Y\},Z\}$$. Possiamo dimostrare che quest'ultimo è uguale a $$\bigcup\{X,Y,Z\}$$. La prova si serve dell'assioma di estensionalità così come formulato nella [[definizione 1.3|1.3 Definizione (SET)]].
-## Sia $$x\in \bigcup\{\bigcup\{X,Y\},Z\}$$. Allora o $$x\in \bigcup \{X,Y\}$$ che implica a sua volta $$x\in X$$ o $$x \in Y$$ oppure $$x\in Z$$. In tutti i casi possibili, abbiamo che $$x\in \bigcup\{X,Y,Z\}$$, in quanto appartiene almeno a uno di questi elementi. Dunque $$
+
+# Sia $$x\in \bigcup\{\bigcup\{X,Y\},Z\}$$. Allora o $$x\in \bigcup \{X,Y\}$$ che implica a sua volta $$x\in X$$ o $$x \in Y$$ oppure $$x\in Z$$. In tutti i casi possibili, abbiamo che $$x\in \bigcup\{X,Y,Z\}$$, in quanto appartiene almeno a uno di questi elementi. Dunque $$
 \bigcup\{\bigcup\{X,Y\},Z\} \subseteq \bigcup\{X,Y,Z\}$$
-##Sia $$x\in \bigcup\{X,Y,Z\}$$. Allora appartiene ad uno di quei tre insiemi. Nei primi due casi $$X,Y$$, $$x$$ appartiene sicuramente a $$\bigcup\{X,Y\}$$ e quindi anche a $$\bigcup\{\bigcup\{X,Y\},Z\}$$. Se $$x\in Z$$, trivialmente appartiene anche a $$\bigcup\{\bigcup\{X,Y\},Z\}$$. Dunque segue che $$
+#Sia $$x\in \bigcup\{X,Y,Z\}$$. Allora appartiene ad uno di quei tre insiemi. Nei primi due casi $$X,Y$$, $$x$$ appartiene sicuramente a $$\bigcup\{X,Y\}$$ e quindi anche a $$\bigcup\{\bigcup\{X,Y\},Z\}$$. Se $$x\in Z$$, trivialmente appartiene anche a $$\bigcup\{\bigcup\{X,Y\},Z\}$$. Dunque segue che $$
 \bigcup\{X,Y,Z\}\subseteq\bigcup\{\bigcup\{X,Y\},Z\}
 $$ 
-## Con un ragionamento analogo possiamo dimostrare pure che $$
-X\cup (Y\cup Z) = \bigcup\{X,Y,Z\}$$ Da cui la tesi.</pre>
+# Con un ragionamento analogo possiamo dimostrare pure che $$
+X\cup (Y\cup Z) = \bigcup\{X,Y,Z\}$$ Da cui la tesi.
+
+@@text-align:right;
+$$\square$$
+@@
+</pre>
 </div>
 <div created="20201030154852461" modified="20201030154852461" tags="" title="1.8 Dimostrazione Parte 3 (SET)">
 <pre> $$X\cup X = \bigcup\{X,X\}$$. Per [[L'Assioma Di Estensionalità|1.2 Definizione (SET)]], $$\{X,X\} = \{X\}$$. Pertanto abbiamo che $$X\cup X = \bigcup\{X,X\} = \bigcup \{X\}$$. Per definizione dell'[[insieme unione|1.6 Definizione (SET)]], $$\bigcup \{X\}$$ contiene tutti gli elementi degli elementi di $$\{X\}$$. Ma l'unico elemento di $$\{X\}$$ è $$X$$ stesso, pertanto $$\bigcup \{X\}$$ coincide con tutti gli elementi di $$X$$, ovvero $$X\cup X = X$$.
