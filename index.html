@@ -9859,7 +9859,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201031225935579" list="[[1.15 Teorema (SET)]] [[1.15 Dimostrazione Parte 2 (SET)]] [[1.15 Dimostrazione Parte 1 (SET)]] Perché? Matematica [[Introduzione Alla Teoria Degli Insiemi]]" modified="20201031230623821" title="$:/StoryList">
+<div created="20201031225935579" list="[[1.15 Teorema (SET)]] [[1.15 Dimostrazione Parte 3 (SET)]] Perché? Matematica [[Introduzione Alla Teoria Degli Insiemi]]" modified="20201031230651097" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10186,10 +10186,16 @@ $$\square$$
 $$\square$$
 @@</pre>
 </div>
-<div created="20201031230223805" modified="20201031230223805" tags="" title="1.15 Dimostrazione Parte 3 (SET)">
+<div created="20201031230223805" modified="20201031230806033" tags="" title="1.15 Dimostrazione Parte 3 (SET)">
 <pre>Dapprima dimostriamo l'implicazione diretta, poi quella inversa:
-# $$\Longrightarrow$$ Supponiamo $$Y\subseteq X$$. Prendiamo un $$x\in(Y\cup X\setminus Y)$$. Allora o $$x\in Y$$ (e quindi, per ipotesi, $$x\in X$$), oppure $$x\in X\setminus Y$$. Per la parte 1 di questo teorema, $$x\in X$$ in ogni caso. Quindi $$X\subseteq (Y\cup X\setminus Y)$$. Ora dimostriamo l'inclusione inversa: sia $$x\in X$$ e ci sono due casi: o $$x\in Y$$ oppure $$x\notin Y$$. In entrambi i casi $$x\in (Y\cup X\setminus Y)$$. La seconda proprietà delle partizioni è una conseguenza diretta della parte 2 di questo teorema. Segue la tesi.
-#$$\Longleftarrow$$ Supponiamo che $$\{Y,X\setminus Y\}$$ sia una partizione di $$X$$. Fissiamo $$y\in Y$$.  Allora si ha che $$y\in (Y\cup X\setminus Y = X)$$ dove l'ultima uguaglianza deriva dal fatto che l'unione degli insiemi di una partizione di un insieme restituisce l'insieme dato. Concludendo abbiamo $$y\in X$$ e quindi $$Y\subseteq X$$.</pre>
+
+# $$\Longrightarrow$$ Supponiamo $$Y\subseteq X$$. Prendiamo un $$x\in(Y\cup X\setminus Y)$$. Allora o $$x\in Y$$ (e quindi, per ipotesi, $$x\in X$$), oppure $$x\in X\setminus Y$$. Per la [[parte 1|1.15 Teorema (SET)]] di questo teorema, $$x\in X$$ in ogni caso. Quindi $$X\subseteq (Y\cup X\setminus Y)$$. Ora dimostriamo l'inclusione inversa: sia $$x\in X$$ e ci sono due casi: o $$x\in Y$$ oppure $$x\notin Y$$. In entrambi i casi $$x\in (Y\cup X\setminus Y)$$. La seconda proprietà delle partizioni è una conseguenza diretta della parte 2 di questo teorema. Segue la tesi.
+#$$\Longleftarrow$$ Supponiamo che $$\{Y,X\setminus Y\}$$ sia una partizione di $$X$$. Fissiamo $$y\in Y$$.  Allora si ha che $$y\in (Y\cup X\setminus Y = X)$$ dove l'ultima uguaglianza deriva dal fatto che l'unione degli insiemi di una partizione di un insieme restituisce l'insieme dato. Concludendo abbiamo $$y\in X$$ e quindi $$Y\subseteq X$$.
+
+
+@@text-align:right;
+$$\square$$
+@@</pre>
 </div>
 <div created="20201031230319044" modified="20201031230319044" tags="" title="1.15 Dimostrazione Parte 4 (SET)">
 <pre>Supponiamo $$X\setminus Y = \emptyset$$. Questo vuol dire che se $$x\in X$$ allora $$x\in Y$$ (altrimenti vi sarebbe qualche $$x\in X$$ non contenuto in $$Y$$ e $$X\setminus Y$$ non risulterebbe vuoto). Dunque $$X\subseteq Y$$.
