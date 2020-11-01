@@ -231,6 +231,8 @@ Error message and password prompt
 
 <li>1.15 Teorema (SET)</li>
 
+<li>1.16 Dimostrazione Parte 1 (SET)</li>
+
 <li>1.16 Teorema (SET)</li>
 
 <li>1.2 Definizione (SET)</li>
@@ -10146,7 +10148,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201101135103605" list="[[1.15 Teorema (SET)]] [[1.16 Teorema (SET)]] [[1.15 Dimostrazione Parte 4 (SET)]] Perché?" modified="20201101135137612" title="$:/StoryList">
+<div created="20201101135103605" list="[[1.15 Dimostrazione Parte 1 (SET)]] [[1.10 Teorema (SET)]] [[1.11 Definizione (SET)]] [[1.15 Teorema (SET)]] [[1.16 Teorema (SET)]] [[1.16 Dimostrazione Parte 1 (SET)]] [[1.15 Dimostrazione Parte 4 (SET)]] Perché?" modified="20201101135932060" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10433,7 +10435,7 @@ $$\square$$
 [[Ritorna al Teorema|1.10 Teorema (SET)]]
 </pre>
 </div>
-<div created="20201030113751322" modified="20201030161215381" title="1.10 Teorema (SET)">
+<div created="20201030113751322" modified="20201101135835530" title="1.10 Teorema (SET)">
 <pre>Dati tre insiemi $$X, Y,Z$$ per l'intersezione valgono le seguenti proprietà:
 
 # $$X\cap Y = Y\cap X$$ ''Proprietà Commutativa''
@@ -10508,7 +10510,7 @@ $$
 
 [[Precedente|1.13 Definizione (SET)]]</pre>
 </div>
-<div created="20201031230112759" modified="20201031231315002" tags="" title="1.15 Dimostrazione Parte 1 (SET)">
+<div created="20201031230112759" modified="20201101135849608" tags="" title="1.15 Dimostrazione Parte 1 (SET)">
 <pre>Se $$x\in X\setminus Y$$, allora per definizione $$x\in X$$ quindi $$X\setminus Y\subseteq X$$.
 
 @@text-align:right;
@@ -10580,6 +10582,17 @@ $$\square$$
 
 [[Precedente|1.14 Definizione (SET)]]
 </pre>
+</div>
+<div created="20201101135948935" modified="20201101141437028" title="1.16 Dimostrazione Parte 1 (SET)">
+<pre>Denotiamo con $$L$$ il lato sinistro della prima identità del [[teorema|1.16 Teorema (SET)]], mentre con $$R$$ il lato destro.
+Dimostreremo dapprima che $$L\subseteq R$$ e poi che $$R\subseteq L$$. Questo, equivale a dire $$L = R$$.
+
+#$$L\subseteq R:$$ Se $$x\in L$$ allora $$x\in A$$ (per la prima parte del [[teorema 1.15|1.15 Teorema (SET)]]). Per ipotesi inoltre, $$x\in X$$, perché $$A\subseteq X$$. Per definizione di insieme differenza, $$x\notin \bigcap\limits_{B\in\mathcal{F}} B$$. Quindi esiste almeno un $$B\in\mathcal{F}$$, per cui $$x\notin B$$. Come conseguenza si dovrà avere $$x\in A\setminus B$$. Dunque abbiamo che $$x\in \bigcup\limits_{B\in\mathcal{F}} A\setminus B$$, per quanto detto. Dunque $$L\subseteq R$$
+#$$R\subseteq L:$$ Se $$x\in R$$, allora esiste almeno un $$B$$ per cui si ha $$x\in A\setminus B$$. Quindi $$x\notin B$$ per almeno un $$B$$, e questo implica che $$x\notin \bigcap\limits_{B\in\mathcal{F}} B$$ (non è comune a tutti i $$B$$). Pertanto $$x\in A\setminus\bigcap\limits_{B\in\mathcal{F}} B$$. Segue $$R\subseteq L$$.
+
+@@text-align:right;
+$$\square$$
+@@</pre>
 </div>
 <div created="20201101135146920" modified="20201101135807696" title="1.16 Teorema (SET)">
 <pre>Sia $$X$$ un insieme, $$A\subseteq X$$ e sia $$\mathcal{F}\subseteq \mathcal{P}(X)$$. Allora:
