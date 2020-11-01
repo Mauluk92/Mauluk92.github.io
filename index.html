@@ -233,6 +233,8 @@ Error message and password prompt
 
 <li>1.16 Dimostrazione Parte 1 (SET)</li>
 
+<li>1.16 Dimostrazione Parte 2 (SET)</li>
+
 <li>1.16 Teorema (SET)</li>
 
 <li>1.2 Definizione (SET)</li>
@@ -10148,7 +10150,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201101135103605" list="[[1.16 Dimostrazione Parte 1 (SET)]] [[1.15 Dimostrazione Parte 1 (SET)]] [[1.10 Teorema (SET)]] [[1.11 Definizione (SET)]] [[1.15 Teorema (SET)]] [[1.16 Teorema (SET)]] [[1.15 Dimostrazione Parte 4 (SET)]] Perché?" modified="20201101142306927" title="$:/StoryList">
+<div created="20201101135103605" list="[[1.16 Dimostrazione Parte 1 (SET)]] [[1.15 Dimostrazione Parte 1 (SET)]] [[1.10 Teorema (SET)]] [[1.11 Definizione (SET)]] [[1.15 Teorema (SET)]] [[1.16 Teorema (SET)]] [[1.16 Dimostrazione Parte 2 (SET)]] [[1.15 Dimostrazione Parte 4 (SET)]] Perché?" modified="20201101142623060" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10597,6 +10599,24 @@ $$\square$$
 [[Ritorna al Teorema|1.16 Teorema (SET)]]
 
 [[Parte Successiva Della Dimostrazione|1.16 Dimostrazione Parte 2 (SET)]]
+</pre>
+</div>
+<div created="20201101142637415" modified="20201101144608682" title="1.16 Dimostrazione Parte 2 (SET)">
+<pre>Chiamiamo, di nuovo, $$L$$, la parte sinistra della seconda identità del [[teorema|1.16 Teorema (SET)]], ed $$R$$ la parte destra.
+Il procedimento è del tutto analogo alla [[precedente dimostrazione|1.16 Dimostrazione Parte 1 (SET)]]: prima mostriamo che $$L\subseteq R$$ e poi che $$R\subseteq L$$:
+
+#$$L\subseteq R:$$ sia $$x\in L$$. Allora $$x\notin \bigcup\limits_{B\in\mathcal{F}} B$$. Questo vuol dire che non appartiene a nessun $$B\in\mathcal{F}$$ (altrimenti apparterebbe all'unione di tutti i $$B$$). Quindi abbiamo $$x\in A\setminus B$$ per ogni $$B\in\mathcal{F}$$. Se $$x$$ appartiene a ciascuno di questi insiemi, appartiene pure alla loro intersezione, essendo un elemento in comune:$$x\in\bigcap\limits_{B\in\mathcal{F}} A\setminus B$$. Abbiamo dimostrato che $$L\subseteq R$$.
+#$$R\subseteq L:$$ sia ora $$x\in R$$. Allora $$x\in A$$ per la prima parte del [[teorema 1.15|1.15 Teorema (SET)]]. Inoltre $$x\notin B$$ per tutti i $$B\in\mathcal{F}$$ (proprio perché $$x\in\bigcap\limits_{B\in\mathcal{F}} A\setminus B$$, non può appartenere a nessun $$B$$). Se $$x\notin B$$ per nessun $$B$$, significa anche che $$x\notin \bigcup\limits_{B\in\mathcal{F}}B$$. Abbiamo dimostrato che $$x\in A\setminus\bigcup\limits_{B\in\mathcal{F}} B$$, ovvero $$R\subseteq L$$.
+
+
+@@text-align:right;
+$$\square$$
+@@
+
+[[Ritorna al Teorema|1.16 Teorema (SET)]]
+
+[[Parte Precedente Della Dimostrazione|1.16 Dimostrazione Parte 1 (SET)]]
+
 </pre>
 </div>
 <div created="20201101135146920" modified="20201101135807696" title="1.16 Teorema (SET)">
