@@ -199,6 +199,12 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>$:/themes/tiddlywiki/vanilla/metrics/storyright</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/storywidth</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth</li>
+
 <li>$:/view</li>
 
 <li>1.1 Definizione (SET)</li>
@@ -10134,14 +10140,14 @@ focus: show</pre>
 <div created="20201027200259872" modified="20201027200259872" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20201101115424287" modified="20201101122224569" title="$:/state/tab--1963855381">
-<pre>$:/plugins/jd/mob/config</pre>
+<div created="20201101115424287" modified="20201102163530533" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/StoryView</pre>
 </div>
 <div created="20201101115643499" modified="20201101115648951" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Themes</pre>
 </div>
-<div created="20201027174027046" modified="20201101135129909" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div created="20201027174027046" modified="20201102163221880" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20201027174029550" modified="20201027174029550" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10152,7 +10158,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201102094648502" list="myStyles Perché? Matematica [[Introduzione Alla Teoria Degli Insiemi]] [[1.1 Definizione (SET)]] [[1.2 Definizione (SET)]] [[1.3 Definizione (SET)]] [[1.4 Definizione (SET)]] [[1.5 Definizione (SET)]] [[1.6 Definizione (SET)]] [[1.7 Definizione (SET)]] [[1.8 Teorema (SET)]] [[1.8 Dimostrazione Parte 1 (SET)]] [[1.8 Dimostrazione Parte 2 (SET)]] [[1.8 Dimostrazione Parte 3 (SET)]] [[1.8 Dimostrazione Parte 4 (SET)]] [[1.9 Definizione (SET)]] [[1.10 Teorema (SET)]] [[1.10 Dimostrazione Parte 1 (SET)]] [[1.10 Dimostrazione Parte 2 (SET)]] [[1.10 Dimostrazione Parte 3 (SET)]] [[1.10 Dimostrazione Parte 4 (SET)]] [[1.11 Definizione (SET)]] [[1.12 Definizione (SET)]] [[1.13 Definizione (SET)]] [[1.14 Definizione (SET)]] [[1.15 Teorema (SET)]] [[1.15 Dimostrazione Parte 1 (SET)]] [[1.15 Dimostrazione Parte 2 (SET)]] [[1.15 Dimostrazione Parte 3 (SET)]] [[1.15 Dimostrazione Parte 4 (SET)]] [[1.15 Dimostrazione Parte 1(SET)]] [[1.16 Teorema (SET)]] [[1.17 Definizione (SET)]]" modified="20201102150034722" title="$:/StoryList">
+<div created="20201102094648502" list="[[1.15 Dimostrazione Parte 2 (SET)]] [[1.15 Dimostrazione Parte 3 (SET)]] [[1.15 Dimostrazione Parte 4 (SET)]]" modified="20201102163649374" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10371,8 +10377,17 @@ focus: show</pre>
     }
 }</pre>
 </div>
-<div created="20201101115504016" modified="20201101115529087" title="$:/view">
-<pre>zoomin</pre>
+<div created="20201102163331916" modified="20201102163338123" title="$:/themes/tiddlywiki/vanilla/metrics/storyright">
+<pre>880px</pre>
+</div>
+<div created="20201102163343035" modified="20201102163347126" title="$:/themes/tiddlywiki/vanilla/metrics/storywidth">
+<pre>880px</pre>
+</div>
+<div created="20201102163352236" modified="20201102163353071" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
+<pre>786px</pre>
+</div>
+<div created="20201101115504016" modified="20201102163636677" title="$:/view">
+<pre>pop</pre>
 </div>
 <div created="20201027201642004" modified="20201102134750121" title="1.1 Definizione (SET)">
 <pre>Un insieme è una collezione di elementi. Più precisamente, qualunque oggetto che soddisfi ''Gli Assiomi Di Zermelo'' è un insieme.
@@ -10632,7 +10647,7 @@ Parte 2
 Parte 4
 &lt;/$button&gt;</pre>
 </div>
-<div created="20201031230319044" modified="20201102150314161" tags="" title="1.15 Dimostrazione Parte 4 (SET)">
+<div created="20201031230319044" modified="20201102150356680" tags="" title="1.15 Dimostrazione Parte 4 (SET)">
 <pre>Supponiamo $$X\setminus Y = \emptyset$$. Questo vuol dire che se $$x\in X$$ allora $$x\in Y$$ (altrimenti vi sarebbe qualche $$x\in X$$ non contenuto in $$Y$$ e $$X\setminus Y$$ non risulterebbe vuoto). Dunque $$X\subseteq Y$$.
 
 Viceversa  se $$ X\subseteq Y$$ allora $$\forall x\in X \hspace{1mm} x\in Y$$, ovvero $$\nexists x\in X : x\notin Y$$. Questo vuol dire proprio che $$X\setminus Y = \emptyset$$.
@@ -10644,8 +10659,7 @@ $$\square$$
 &lt;div style=&quot;float:right;&quot;&gt;
 &lt;$button to=&quot;1.15 Teorema (SET)&quot;class=&quot;myButtonClass&quot; &gt;
 Ritorna Al Teorema
-&lt;/$button&gt;
-&lt;div style=&quot;float:right;&quot;&gt;
+&lt;/$button&gt;     
 &lt;$button to=&quot;1.15 Dimostrazione Parte 3 (SET)&quot;class=&quot;myRightButtonClass&quot; &gt;
 Parte 3
 &lt;/$button&gt;
