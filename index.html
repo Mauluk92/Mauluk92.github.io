@@ -273,6 +273,8 @@ Error message and password prompt
 
 <li>Contenuti</li>
 
+<li>Draft of '1.8 Dimostrazione Parte 1 (SET)'</li>
+
 <li>Draft of 'Introduzione Alla Teoria Degli Insiemi'</li>
 
 <li>Icona Insiemi</li>
@@ -287,7 +289,7 @@ Error message and password prompt
 
 <li>Perché?</li>
 
-<li>Proprietà Dell'Unione</li>
+<li>Proprietà Dell'Unione 1 (Commutativa)</li>
 
 <li>Unione Insiemistica</li>
 
@@ -10182,7 +10184,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201102094648502" list="[[Unione Insiemistica]] [[Proprietà Dell'Unione]] [[1.8 Dimostrazione Parte 4 (SET)]] [[1.8 Dimostrazione Parte 3 (SET)]] [[1.8 Dimostrazione Parte 2 (SET)]] [[1.8 Dimostrazione Parte 1 (SET)]] [[Appartenenza Insiemistica]] [[Assioma Di Estensionalità]] [[Inclusione Insiemistica]] [[Assioma Degli Insiemi Elementari]] [[Assioma Di Specificazione]] [[Assioma Dell'Insieme Unione]]" modified="20201102201747170" title="$:/StoryList">
+<div created="20201102094648502" list="[[Unione Insiemistica]] [[Proprietà Dell'Unione 1 (Commutativa)]] [[1.8 Dimostrazione Parte 4 (SET)]] [[1.8 Dimostrazione Parte 3 (SET)]] [[1.8 Dimostrazione Parte 2 (SET)]] [[Draft of '1.8 Dimostrazione Parte 1 (SET)']] [[Appartenenza Insiemistica]] [[Assioma Di Estensionalità]] [[Inclusione Insiemistica]] [[Assioma Degli Insiemi Elementari]] [[Assioma Di Specificazione]] [[Assioma Dell'Insieme Unione]]" modified="20201102201747170" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201102170116524" modified="20201102170426544" title="$:/temp/advancedsearch">
@@ -10973,6 +10975,21 @@ Successivo
 <div created="20201027183348162" modified="20201027183518692" tags="$:/tags/SideBar" title="Contenuti">
 <pre>[[Matematica]]</pre>
 </div>
+<div created="20201030154459545" draft.of="1.8 Dimostrazione Parte 1 (SET)" draft.title="1.8 Dimostrazione Parte 1 (SET)" icon="Icona Insiemi" modified="20201102202502413" tags="" title="Draft of '1.8 Dimostrazione Parte 1 (SET)'">
+<pre>Per Definizione $$X\cup Y=\bigcup \{X,Y\}$$. Per L'[[Assioma Di Estensionalità]], $$\{X,Y\}= \{Y,X\}$$ poiché hanno gli stessi elementi. Pertanto segue che: $$X\cup Y=\bigcup\{X,Y\}=\bigcup\{Y,X\}=Y\cup X$$
+
+@@text-align:right;
+$$\square$$
+@@
+&lt;div style=&quot;float:right;&quot;&gt;
+&lt;$button to=&quot;Proprietà Dell'Unione&quot;class=&quot;myButtonClass&quot; &gt;
+Ritorna Al Teorema
+&lt;/$button&gt;
+&lt;$button to=&quot;1.8 Dimostrazione Parte 2 (SET)&quot;class=&quot;myLeftButtonClass&quot; &gt;
+Parte 2
+&lt;/$button&gt;
+&lt;/div&gt;</pre>
+</div>
 <div modified="20201030113335595" title="Draft of 'Introduzione Alla Teoria Degli Insiemi'">
 <pre></pre>
 </div>
@@ -11109,42 +11126,28 @@ Ecco i contenuti della Wiki, divisi in macrocategorie.
 [[Matematica]]
 </pre>
 </div>
-<div created="20201028104131736" icon="Icona Insiemi" modified="20201102201728121" title="Proprietà Dell'Unione">
-<pre>''1.8 Teorema''
+<div created="20201028104131736" icon="Icona Insiemi" modified="20201102202836699" title="Proprietà Dell'Unione 1 (Commutativa)">
+<pre>''1.8 Teorema (a)''
 
-Dati tre insiemi $$X,Y,Z$$, per l'unione insiemistica valgono le seguenti proprietà:
+Dati due insiemi, vale la ''proprietà commutativa'' per l'unione insiemistica:
 
-# $$X\cup Y = Y\cup X$$ &lt;div style=&quot;float:right;&quot;&gt;''Proprietà Commutativa'' &lt;/div&gt;
-# $$(X\cup Y)\cup Z = X\cup (Y\cup Z)$$ &lt;div style=&quot;float:right;&quot;&gt;''Proprietà Associativa'' &lt;/div&gt;
-#$$X\cup X = X $$ &lt;div style=&quot;float:right;&quot;&gt;''Proprietà Riflessiva''&lt;/div&gt;
-#Se $$X\subseteq Z$$ e $$Y\subseteq Z$$ allora $$X\cup Y \subseteq Z$$
-
-L'ultima proprietà vuol dire che l'unione di due insiemi contenuti in un insieme dato, è il più piccolo insieme che li contiene entrambi e contenuto nell'insieme di partenza.
+$$
+X\cup Y = Y\cup X$$
 
 ''Dimostrazione:''
 
-&lt;$button to=&quot;1.8 Dimostrazione Parte 1 (SET)&quot;class=&quot;myButtonClass&quot; &gt;
-Parte 1
-&lt;/$button&gt;
+Per Definizione $$X\cup Y=\bigcup \{X,Y\}$$. Per L'[[Assioma Di Estensionalità]], $$\{X,Y\}= \{Y,X\}$$ poiché hanno gli stessi elementi. Pertanto segue che: $$X\cup Y=\bigcup\{X,Y\}=\bigcup\{Y,X\}=Y\cup X$$
 
-&lt;$button to=&quot;1.8 Dimostrazione Parte 2 (SET)&quot;class=&quot;myButtonClass&quot; &gt;
-Parte 2
-&lt;/$button&gt;
-
-&lt;$button to=&quot;1.8 Dimostrazione Parte 3 (SET)&quot;class=&quot;myButtonClass&quot; &gt;
-Parte 3
-&lt;/$button&gt;
-
-&lt;$button to=&quot;1.8 Dimostrazione Parte 4 (SET)&quot;class=&quot;myButtonClass&quot; &gt;
-Parte 4
-&lt;/$button&gt;
+@@text-align:right;
+$$\square$$
+@@
 
 
 &lt;div style=&quot;float:right;&quot;&gt;
-&lt;$button to=&quot;1.7 Definizione (SET)&quot;class=&quot;myRightButtonClass&quot; &gt;
+&lt;$button to=&quot;Unione Insiemistica&quot;class=&quot;myRightButtonClass&quot; &gt;
 Precedente
 &lt;/$button&gt;
-&lt;$button to=&quot;1.9 Definizione (SET)&quot;class=&quot;myLeftButtonClass&quot;&gt;
+&lt;$button to=&quot;Proprietà Dell'Unione 2 (Associativa)&quot;class=&quot;myLeftButtonClass&quot;&gt;
 Successivo
 &lt;/$button&gt;
  &lt;/div&gt;</pre>
