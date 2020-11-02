@@ -217,8 +217,6 @@ Error message and password prompt
 
 <li>$:/view</li>
 
-<li>1.10 Dimostrazione Parte 2 (SET)</li>
-
 <li>1.10 Dimostrazione Parte 3 (SET)</li>
 
 <li>1.10 Dimostrazione Parte 4 (SET)</li>
@@ -276,6 +274,8 @@ Error message and password prompt
 <li>Perché?</li>
 
 <li>Proprietà Dell'Intersezione 1 (Commutativa)</li>
+
+<li>Proprietà Dell'Intersezione 2 (Associativa)</li>
 
 <li>Proprietà Dell'Unione 1 (Commutativa)</li>
 
@@ -10178,7 +10178,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201102094648502" list="[[Proprietà Dell'Intersezione 1 (Commutativa)]] [[1.10 Dimostrazione Parte 4 (SET)]] [[1.10 Dimostrazione Parte 3 (SET)]] [[1.10 Dimostrazione Parte 2 (SET)]] [[Intersezione Insiemistica]] [[Unione Insiemistica]] [[Proprietà Dell'Unione 1 (Commutativa)]] [[Proprietà Dell'Unione 2 (Associativa)]] [[Proprietà Dell'Unione 3 (Idempotenza)]] [[Proprietà Dell'Unione 4]] [[Appartenenza Insiemistica]] [[Assioma Di Estensionalità]] [[Inclusione Insiemistica]] [[Assioma Di Specificazione]] [[Assioma Dell'Insieme Unione]]" modified="20201102211124654" title="$:/StoryList">
+<div created="20201102094648502" list="[[Proprietà Dell'Intersezione 1 (Commutativa)]] [[1.10 Dimostrazione Parte 4 (SET)]] [[1.10 Dimostrazione Parte 3 (SET)]] [[Proprietà Dell'Intersezione 2 (Associativa)]] [[Intersezione Insiemistica]] [[Unione Insiemistica]] [[Proprietà Dell'Unione 1 (Commutativa)]] [[Proprietà Dell'Unione 2 (Associativa)]] [[Proprietà Dell'Unione 3 (Idempotenza)]] [[Proprietà Dell'Unione 4]] [[Appartenenza Insiemistica]] [[Assioma Di Estensionalità]] [[Inclusione Insiemistica]] [[Assioma Di Specificazione]] [[Assioma Dell'Insieme Unione]]" modified="20201102211124654" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201102170116524" modified="20201102170426544" title="$:/temp/advancedsearch">
@@ -10411,30 +10411,6 @@ focus: show</pre>
 </div>
 <div created="20201101115504016" modified="20201102163636677" title="$:/view">
 <pre>pop</pre>
-</div>
-<div created="20201030160932516" modified="20201102143211395" tags="" title="1.10 Dimostrazione Parte 2 (SET)">
-<pre>Notiamo che $$(X\cap Y)\cap Z = \{z\in(X\cap Y)\cup Z : z\in (X\cap Y)\wedge z\in Z\}$$. Possiamo dimostrare che ques'ultimo è uguale a :$$
-A=\{z\in \bigcup\{X,Y,Z\} : z\in X\wedge z\in Y\wedge z\in Z\}
-$$
-
-#Sia $$z\in (X\cap Y)\cap Z$$. Allora si deve avere, per definizione, che $$z\in X\cap Y$$ e $$z\in Z$$. Ma $$z\in X\cap Y$$ implica che $$z\in X,z\in Y$$. Necessariamente $$z\in \bigcup \{X,Y,Z\}$$ e appartiene a tutti e tre contemporaneamente: pertanto $$z\in A$$. Concludiamo che $$(X\cap Y)\cap Z \subseteq A$$.
-#Viceversa, sia ora $$z\in A$$. Allora $$z \in X\cap Y$$ e $$z\in Z$$, ovvero $$A\subseteq (X\cap Y)\cap Z$$.
-#Con un ragionamento analogo possiamo mostrare che $$X\cap (Y\cap Z) = A $$, da cui segue la tesi.
-
-@@text-align:right;
-$$\square$$
-@@
-
-&lt;div style=&quot;float:right;&quot;&gt;
-&lt;$button to=&quot;1.10 Teorema (SET)&quot;class=&quot;myButtonClass&quot; &gt;
-Ritorna Al Teorema
-&lt;/$button&gt;
-&lt;$button to=&quot;1.10 Dimostrazione Parte 1 (SET)&quot;class=&quot;myRightButtonClass&quot; &gt;
-Parte 1
-&lt;/$button&gt;
-&lt;$button to=&quot;1.10 Dimostrazione Parte 3 (SET)&quot;class=&quot;myLeftButtonClass&quot; &gt;
-Parte 3
-&lt;/$button&gt;</pre>
 </div>
 <div created="20201030161002181" modified="20201102144020766" tags="" title="1.10 Dimostrazione Parte 3 (SET)">
 <pre>Per definizione $$X\cap X = \{z\in X\cup X : z\in X\wedge z\in X\}$$. Per la [[proprietà riflessiva dell'unione insiemistica|1.8 Teorema (SET)]], abbiamo che $$X\cup X = X$$ mentre abbiamo che, logicamente, $$(z\in X\wedge z\in X)\Longleftrightarrow z\in X$$. Pertanto si ha:$$
@@ -10999,6 +10975,39 @@ Successivo
  &lt;/div&gt;
 
 </pre>
+</div>
+<div created="20201030160932516" icon="Icona Insiemi" modified="20201102212026299" tags="" title="Proprietà Dell'Intersezione 2 (Associativa)">
+<pre>''1.10 Teorema (b)''
+
+Dati tre insiemi $$X,Y,Z$$, vale la ''proprietà associativa'' per l'intersezione:
+$$
+(X\cap Y)\cap Z=X\cap(Y\cap Z)
+$$
+
+''Dimostrazione:''
+
+Notiamo che $$(X\cap Y)\cap Z = \{z\in(X\cap Y)\cup Z : z\in (X\cap Y)\wedge z\in Z\}$$. Possiamo dimostrare che ques'ultimo è uguale a :$$
+A=\{z\in \bigcup\{X,Y,Z\} : z\in X\wedge z\in Y\wedge z\in Z\}
+$$
+
+#Sia $$z\in (X\cap Y)\cap Z$$. Allora si deve avere, per definizione, che $$z\in X\cap Y$$ e $$z\in Z$$. Ma $$z\in X\cap Y$$ implica che $$z\in X,z\in Y$$. Necessariamente $$z\in \bigcup \{X,Y,Z\}$$ e appartiene a tutti e tre contemporaneamente: pertanto $$z\in A$$. Concludiamo che $$(X\cap Y)\cap Z \subseteq A$$.
+#Viceversa, sia ora $$z\in A$$. Allora $$z \in X\cap Y$$ e $$z\in Z$$, ovvero $$A\subseteq (X\cap Y)\cap Z$$.
+#Con un ragionamento analogo possiamo mostrare che $$X\cap (Y\cap Z) = A $$, da cui segue la tesi.
+
+@@text-align:right;
+$$\square$$
+@@
+
+&lt;div style=&quot;float:right;&quot;&gt;
+&lt;$button to=&quot;1.10 Teorema (SET)&quot;class=&quot;myButtonClass&quot; &gt;
+Ritorna Al Teorema
+&lt;/$button&gt;
+&lt;$button to=&quot;1.10 Dimostrazione Parte 1 (SET)&quot;class=&quot;myRightButtonClass&quot; &gt;
+Parte 1
+&lt;/$button&gt;
+&lt;$button to=&quot;1.10 Dimostrazione Parte 3 (SET)&quot;class=&quot;myLeftButtonClass&quot; &gt;
+Parte 3
+&lt;/$button&gt;</pre>
 </div>
 <div created="20201028104131736" icon="Icona Insiemi" modified="20201102202836699" title="Proprietà Dell'Unione 1 (Commutativa)">
 <pre>''1.8 Teorema (a)''
