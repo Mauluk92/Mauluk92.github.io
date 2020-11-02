@@ -179,6 +179,8 @@ Error message and password prompt
 
 <li>$:/state/showeditpreview</li>
 
+<li>$:/state/sidebar</li>
+
 <li>$:/state/tab--1498284803</li>
 
 <li>$:/state/tab--1963855381</li>
@@ -10157,16 +10159,19 @@ focus: show</pre>
 <div created="20201027200259872" modified="20201027200259872" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
+<div created="20201102220552243" modified="20201102220939646" title="$:/state/sidebar">
+<pre>yes</pre>
+</div>
 <div created="20201102170332305" modified="20201102170353520" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
-<div created="20201101115424287" modified="20201102163848339" title="$:/state/tab--1963855381">
-<pre>$:/plugins/jd/mob/config</pre>
+<div created="20201101115424287" modified="20201102220620817" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/StoryView</pre>
 </div>
 <div created="20201101115643499" modified="20201101115648951" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Themes</pre>
 </div>
-<div created="20201027174027046" modified="20201102163221880" title="$:/state/tab-1749438307">
+<div created="20201027174027046" modified="20201102220645586" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20201027174029550" modified="20201027174029550" title="$:/state/tab-2065006209">
@@ -10178,7 +10183,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201102094648502" list="[[Proprietà Dell'Intersezione 1 (Commutativa)]] [[1.10 Dimostrazione Parte 4 (SET)]] [[1.10 Dimostrazione Parte 3 (SET)]] [[Proprietà Dell'Intersezione 2 (Associativa)]] [[Intersezione Insiemistica]] [[Unione Insiemistica]] [[Proprietà Dell'Unione 1 (Commutativa)]] [[Proprietà Dell'Unione 2 (Associativa)]] [[Proprietà Dell'Unione 3 (Idempotenza)]] [[Proprietà Dell'Unione 4]] [[Appartenenza Insiemistica]] [[Assioma Di Estensionalità]] [[Inclusione Insiemistica]] [[Assioma Di Specificazione]] [[Assioma Dell'Insieme Unione]]" modified="20201102211124654" title="$:/StoryList">
+<div created="20201102094648502" list="[[Appartenenza Insiemistica]]" modified="20201102221335697" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201102170116524" modified="20201102170426544" title="$:/temp/advancedsearch">
@@ -10409,8 +10414,8 @@ focus: show</pre>
 <div created="20201102163352236" modified="20201102163831837" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
 <pre>886px</pre>
 </div>
-<div created="20201101115504016" modified="20201102163636677" title="$:/view">
-<pre>pop</pre>
+<div created="20201101115504016" modified="20201102220628153" title="$:/view">
+<pre>zoomin</pre>
 </div>
 <div created="20201030161002181" modified="20201102144020766" tags="" title="1.10 Dimostrazione Parte 3 (SET)">
 <pre>Per definizione $$X\cap X = \{z\in X\cup X : z\in X\wedge z\in X\}$$. Per la [[proprietà riflessiva dell'unione insiemistica|1.8 Teorema (SET)]], abbiamo che $$X\cup X = X$$ mentre abbiamo che, logicamente, $$(z\in X\wedge z\in X)\Longleftrightarrow z\in X$$. Pertanto si ha:$$
@@ -10683,7 +10688,7 @@ Successivo
 &lt;/$button&gt;
  &lt;/div&gt;</pre>
 </div>
-<div created="20201027201642004" icon="Icona Insiemi" modified="20201102200447210" title="Appartenenza Insiemistica">
+<div created="20201027201642004" icon="Icona Insiemi" modified="20201102221610423" tags="[[Insiemistica Elementare]]" title="Appartenenza Insiemistica">
 <pre>''1.1 Definizione''
 
 Un insieme è una collezione di elementi. Più precisamente, qualunque oggetto che soddisfi ''Gli Assiomi Di Zermelo'' è un insieme.
@@ -10697,7 +10702,9 @@ Scriviamo $$x\in X$$, per esempio, quando $$x$$ è un elemento di $$X$$.
 Successivo
 
 &lt;/$button&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+
+&lt;$list filter=&quot;[tag[Appartenenza Insiemistica]sort[title]]&quot;/&gt;</pre>
 </div>
 <div created="20201028094007268" icon="Icona Insiemi" modified="20201102201302200" title="Assioma Degli Insiemi Elementari">
 <pre>''1.4 Definizione''
